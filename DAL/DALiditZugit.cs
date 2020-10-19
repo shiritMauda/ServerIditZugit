@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
 using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace DAL
 {
