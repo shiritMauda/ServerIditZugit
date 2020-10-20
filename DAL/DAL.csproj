@@ -95,5 +95,11 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ENTITIES\ENTITIES.csproj">
+      <Project>{dd1e886e-7f9b-466c-9147-95e3e79994c9}</Project>
+      <Name>ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

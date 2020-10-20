@@ -5,20 +5,15 @@ using System.Configuration;
 using System.Diagnostics;
 using MySql.Data.MySqlClient;
 using System.Data;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 
 namespace DAL
 {
-    public class DALsweets : IDisposable
+    public class DALiditZugit : IDisposable
     {
         private MySqlConnection connection;
-        //private string server;
-        //private string database;
-        //private string uid;
-        //private string password;
-
-        //Constructor
-        public DALsweets()
+  
+        public DALiditZugit()
         {
             Initialize();
         }
@@ -27,8 +22,8 @@ namespace DAL
         private void Initialize()
         {
             //server = "localhost";
-            //database = "sweets";
-            //uid = "SweetWeb";
+            //database = "iditZugit";
+            //uid = "iditZugit";
             //password = "21062911aA!";
             //string connectionString;
             //connectionString = "SERVER=" + server + ";" + "DATABASE=" +
@@ -78,7 +73,7 @@ namespace DAL
             }
         }
 
-        public MySqlDataReader ExecuteReader(String query, List<MySqlParameter> sqlparams)
+        public MySqlDataReader ExecuteReader(String query, List<MySqlParameter> sqlparams = null )
         {
 
             MySqlCommand Command = new MySqlCommand(query, connection);
